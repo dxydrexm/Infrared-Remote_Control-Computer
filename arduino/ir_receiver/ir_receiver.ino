@@ -33,10 +33,10 @@ void loop() {
           Serial.println("PLAY");
           break;
         case 0x7:
-          Serial.println("-");
+          Serial.println("MINUS");
           break;
         case 0x15:
-          Serial.println("+");
+          Serial.println("PLUS");
           break;
         case 0x9:
           Serial.println("EQ");
@@ -45,10 +45,10 @@ void loop() {
           Serial.println("0");
           break;
         case 0x19:
-          Serial.println("100+");
+          Serial.println("HUNDRED");
           break;
         case 0xD:
-          Serial.println("200+");
+          Serial.println("tH");
           break;
         case 0xC:
           Serial.println("1");
