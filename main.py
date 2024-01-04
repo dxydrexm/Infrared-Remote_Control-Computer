@@ -82,7 +82,7 @@ while True:
         continue
 
     if "2" in dataPacket:
-        ag.scroll(10)
+        ag.scroll(sensitivity)
         continue
 
     if "3" in dataPacket:
@@ -101,13 +101,13 @@ while True:
         continue
 
     if "7" in dataPacket:
-        sensitivity = sensitivity - 10
+        sensitivity = sensitivity - 5
         continue
 
     if "8" in dataPacket:
-        ag.scroll(-10)
+        ag.scroll(-sensitivity)
         continue
 
     if "9" in dataPacket:
-        sensitivity = sensitivity + 10
+        sensitivity = sensitivity + 5
         continue
