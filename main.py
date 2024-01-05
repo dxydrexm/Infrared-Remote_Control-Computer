@@ -6,21 +6,22 @@ import time
 TODO (in order):
 Arduino:
 -   make the x leds light up if the mouseUp of x button is pressed (same for y)
--   make the crystal lcd screen show the sensitivity (maybe other useful informations too)
+-   make the crystal lcd screen show the sensitivity (maybe other useful information too)
 -   make buttons to control the sensitivity or even a potentiometer ?
 -   make a sound with a buzzer certain led light up when there's an issue or the max sensitivity is reached ?
--   use fingerprint recognition to lock or unlock the functionnality ?
+-   use fingerprint recognition to lock or unlock the functionality ?
 Python:
 -    make a scroll-click button if possible
 -    manage to make the clicks not as quick as they are
 -    make the sensitivity more convenient to use
--    make the mouvements of the mouse more pleasant
+-    make the movements of the mouse more pleasant
 -    find purpose for the two last empty buttons
 
 other:
 -   find max en lowest sens possible
 """
 
+# Don't forget to change the port to yours
 arduinoData = serial.Serial("com6", 9600)
 sensitivity = 10
 
