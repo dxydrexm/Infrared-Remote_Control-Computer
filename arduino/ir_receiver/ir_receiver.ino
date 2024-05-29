@@ -14,15 +14,13 @@ void setup() {
 }
 
 void loop() {
-  //for potentiometer support
-  //int sensorValue = analogRead(A0);
 
   if (IrReceiver.decode()) {
 
       IrReceiver.resume();
 
       switch(IrReceiver.decodedIRData.command) {
-        //Your remote may have a different commands
+        //Your remote may have a different command
         case 0x45:
           Serial.println("CH-");
           digitalWrite(3, HIGH);
@@ -118,6 +116,4 @@ void loop() {
           break;
       }
   }
-  //for potentiometer support
-  //Serial.println(sensorValue);
 }
