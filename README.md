@@ -1,6 +1,6 @@
 # Control your computer with an infrared remote
 
-Use an infrared remote to control your computer, when i say control, i mean basic functionnalities like left an right click, mouse movements, etc..
+Use an infrared remote to control your computer, when i say control, i mean basic functionnalities like left and right click, mouse movements, etc..
 
 To do so, i used an arduino uno and an infrared receiver. The arduino sends to a python script what button was pressed and the action related to the button is executed by the python script
 using the pyautogui library.
